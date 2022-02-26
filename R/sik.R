@@ -29,13 +29,6 @@ mysik <- function(mu, cov, n, theta) {
   stilde=matrix(c(s11tilde,s12tilde,s12tilde,s22tilde),nr=2,nc=2,byrow=TRUE)
   theta=0.5*atan((2*sn[2,1])/(sn[1,1]-sn[2,2]))
 
-sn
-stilde
-  x=plot(x1, x2)
-  z=ellipse(sn)
-  a=plot(z)
-  z1=ellipse(stilde)
-  b=plot(z1)
 
   df = data.frame(x1,x2)
   library(ggplot2)
