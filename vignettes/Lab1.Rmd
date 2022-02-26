@@ -1,0 +1,69 @@
+---
+title: "Lab1"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Lab1}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(MATH4793LABStayl0048)
+```
+[Package Making](https://r-pkgs.org/vignettes.html)
+
+
+#Latex Formulas
+
+$\bar{x}_k=\frac{1}{n}\sum_{j=1}^{n}x_{jk}$
+
+$s_{ik}=\frac{1}{n}*\sum_{j=1}^{n}(x_{ji}-\bar{x}_{i})(x_{jk}-\bar{x}_{k})$
+
+$r_{ik}=\frac{s_{ik}}{\sqrt{s_{ii}}\sqrt{s_{kk}}}=\frac{\sum_{j=1}^{n}(x_{ji}-\bar{x}_{i})(x_{jk}-\bar{x}_{k})}{\sqrt{{\sum_{j=1}^{n}(x_{ji}-\bar{x}_{i})^2}\sum_{j=1}^{n}(x_{jk}-\bar{x}_{k})^2}}$
+
+$\textbf{S}=\frac{1}{n-1}\textbf{X}^{'}(\textbf{I}-\frac{1}{n}\textbf{I I}^{'})\textbf{X}$
+
+$$
+	\textbf{R}=\begin{bmatrix} 
+	\frac{s_{11}}{\sqrt{s_{11}}\sqrt{s_{11}}} & \frac{s_{12}}{\sqrt{s_{11}}\sqrt{s_{22}}} & . . . & \frac{s_{1p}}{\sqrt{s_{11}}\sqrt{s_{pp}}} \\
+	. . . & . . . & . . .\\
+		\frac{s_{1p}}{\sqrt{s_{11}}\sqrt{s_{pp}}} & \frac{s_{2p}}{\sqrt{s_{22}}\sqrt{s_{pp}}} & . . . & \frac{s_{pp}}{\sqrt{s_{pp}}\sqrt{s_{pp}}} \\
+	\end{bmatrix}=\begin{bmatrix} 
+	1 & r_{12} & ... & r_{1p} \\
+	... & ... & ... &...\\
+	r_{1p} & r_{2p} & ... & 1 \\
+	\end{bmatrix}
+	\quad
+	\quad
+$$
+# Examples
+
+```{r}
+x=read.table("T1-2.DAT", 
+           header=TRUE)
+```
+
+```{r}
+
+```
+
+```{r}
+ArrayMean(x)
+BiasedCovariance(2, 3)
+CorrelationMatrix(x)
+```
+# Course Assessment
+
+## In-class quiz each class and lab 
+## 4 Assignments (20% Total)
+## Laboratories (10% Total)
+## 2 exams (10% each, Total 20%)
+## 2 Projects, Total 10%
+## 1 Final, 30%
