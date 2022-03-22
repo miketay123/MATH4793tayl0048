@@ -3,5 +3,7 @@
 export(ArrayMean)
 export(BiasedCovariance)
 export(myroots)
+export(myrot)
 export(mysik)
 export(mysik2)
+export(rbvnorm)
