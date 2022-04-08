@@ -5,7 +5,7 @@
 #' @return angle of rotation for independence, eigenvalues, eigenvectors, plot with ellipse and principle axis, orthogonality test
 #' @export
 
-myrot <- function(data = mat)
+myrot <- function(mat)
 {
 
   x1=mat[,1]

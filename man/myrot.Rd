@@ -4,7 +4,7 @@
 \alias{myrot}
 \title{Finds the mean of a data frame}
 \usage{
-myrot(data = mat)
+myrot(mat)
 }
 \arguments{
 \item{mat}{data matrix}

@@ -56,7 +56,7 @@ x=read.table("T1-2.DAT",
 
 ```{r}
 ArrayMean(x)
-BiasedCovariance(2, 3)
+
 ```
 # Course Assessment
 
